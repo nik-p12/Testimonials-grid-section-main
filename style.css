@@ -17,6 +17,7 @@
 .attribution {
     font-size: 11px;
     text-align: center;
+    color: var(--color-grey-400);
 }
 
 .attribution a {
@@ -30,7 +31,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background: var(--color-grey-100);
+    background: #edf2f8;
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -45,7 +46,6 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 300px);
     grid-template-rows: 300px 300px;
-    background: #edf2f8;
     justify-content: center;
     gap: 20px;
     padding: 40px;
@@ -71,6 +71,12 @@ body {
     opacity: 0.8;
 }
 
+.name{
+    font-size: 0.8rem;
+    font-weight: 400;
+    opacity: 0.6;
+}
+
 .desc{
     font-size: 1.2rem;
     font-weight: 500;
@@ -83,9 +89,14 @@ body {
     opacity: 0.9;
 }
 
-.david-clifford {
+.daniel-clifford {
     background: var(--color-purple-500);
     grid-area: 1/1/2/3;
+}
+
+.daniel-clifford .title{
+    color: var(--color-white);
+    opacity: 0.4;
 }
 
 .johnson-walters {
@@ -105,6 +116,11 @@ body {
     background: var(--color-black);
 }
 
+.patrick-abrams .title{
+    color: var(--color-white);
+    opacity: 0.4;
+}
+
 .kira-whittle {
     grid-area: 1/4/3/5;
     color: var(--color-black);
@@ -115,4 +131,56 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 50%;
+}
+
+@media screen and (max-width: 950px) {
+    body{
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 8px;
+        align-items: center;
+    }
+
+    .container{
+        width: 300px;
+        height: auto;
+        margin-top: 30px;
+        padding: 20px;
+        grid-template-columns: 320px;
+        grid-template-rows: repeat(8, 230px);
+        gap: 20px;
+    }
+     
+    .post{
+        padding: 10px 20px 10px 20px;
+    }
+
+    .desc{
+        font-size: 1.3rem;
+    }
+
+    .quotes{
+        line-height: 1.5;
+        font-size: 0.8rem;
+    }
+
+    .daniel-clifford{
+        grid-area: 1/1/3/2;
+    }
+
+    .johnson-walters{
+        grid-area: 3/1/4/2;
+    }
+
+    .jeannette-hamon{
+        grid-area: 4/1/5/2;
+    }
+
+    .patrick-abrams{
+        grid-area: 5/1/7/2;
+    }
+
+    .kira-whittle{
+        grid-area: 7/1/9/2;
+    }
 }
