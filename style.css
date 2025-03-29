@@ -88,8 +88,8 @@ body {
 
 .quotes{
     line-height: 1.6;
-    font-weight: 600;
-    color: var(--color-grey-400);
+    font-weight: 400;
+    color: var(--color-grey-200);
     margin-right: 20px;
 }
 
@@ -182,12 +182,13 @@ body {
     }
 
     .desc{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .quotes{
-        line-height: 1.5;
         font-size: 0.8rem;
+        margin-right: 20px;
+        line-height: 1.5;
     }
 
     .daniel-clifford{
@@ -205,6 +206,14 @@ body {
 
     .patrick-abrams{
         grid-area: 5/1/7/2;
+    }
+
+    .patrick-abrams .desc{
+        font-size: 1.4rem;
+    }
+    
+    .patrick-abrams .quotes{
+        
     }
 
     .kira-whittle{
